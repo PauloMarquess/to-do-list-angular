@@ -1,3 +1,4 @@
+import { TaskList } from './../../model/task-list';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListComponent implements OnInit {
 
+  taskList:Array<TaskList> = [
+   { task:'Minha nova Task',checked:true},
+   { task:'Minha Segunda Task',checked:false}
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  deleteItemTaskList (event:number){
+    this.taskList.splice(event,1)
   }
 
 }

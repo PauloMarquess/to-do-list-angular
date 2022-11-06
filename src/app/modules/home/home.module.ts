@@ -6,6 +6,7 @@ import { ButtonDeleteAllComponent } from './components/button-delete-all/button-
 import { HeaderComponent } from './components/header/header.component';
 
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,6 @@ import { HomeComponent } from './pages/home/home.component';
     HeaderComponent,
     HomeComponent,
   ],
-  imports: [CommonModule],
+  imports: [CommonModule,FormsModule],
 })
 export class HomeModule {}
