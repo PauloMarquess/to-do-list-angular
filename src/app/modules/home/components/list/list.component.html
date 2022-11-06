@@ -10,4 +10,4 @@
 </section>
 
 <app-input-add-items></app-input-add-items>
-<app-button-delete-all *ngIf="taskList.length"></app-button-delete-all>
+<app-button-delete-all *ngIf="taskList.length" (click)="deleteAllTaks()"></app-button-delete-all>

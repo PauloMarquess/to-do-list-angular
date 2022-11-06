@@ -21,5 +21,12 @@ export class ListComponent implements OnInit {
   deleteItemTaskList (event:number){
     this.taskList.splice(event,1)
   }
+  deleteAllTaks () {
+    const confirm = window.confirm("Você deseja realmente Deletar tudo ? ")
+    if(confirm){
+      this.taskList= []
+    }
+   
+  }
 
 }
