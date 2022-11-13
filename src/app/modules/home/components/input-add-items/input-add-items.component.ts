@@ -12,6 +12,7 @@ export class InputAddItemsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
   submitItemTaskList() {
     //Tratamento para espaços na frente e atrás
     this.addItemTaskList = this.addItemTaskList.trim();

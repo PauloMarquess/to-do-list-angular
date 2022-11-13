@@ -1,2 +1,42 @@
+@import '../../../../../dist/sass/variables'
+
 .checked
     text-decoration: line-through
+
+.list-empty
+    margin-left: 100px
+.card-list
+    width: 400px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    .task
+        display: flex
+        gap: 6px
+        margin: 8px 0     
+        .task-checkbox
+            width: 45px
+
+        .task-input
+            width: 100%
+            height: 35px
+            border: none
+            border-radius: 4px
+            font-family: 'Josefin Sans', sans-serif
+            font-size: 16px
+            color: $primary-color
+            padding: 0 10px
+            text-transform: capitalize
+            text-overflow: ellipsis
+        button
+            width: 60px
+            cursor: pointer
+            border: none
+            border-radius: 4px
+
+    @media (max-width:769px)
+        min-width: 320px
+        width: 100%
+        .list-empty
+            margin-left: 70px
+
